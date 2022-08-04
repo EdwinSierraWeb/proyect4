@@ -1,0 +1,229 @@
+*{
+    margin: 0px auto;
+    padding: 0px;
+    scroll-behavior: smooth;
+    font-family: sans-serif, 'Times New Roman';
+}
+
+
+#header{
+    width: 100%;
+    height: 65px;
+    text-align: center;
+    line-height: 65px;
+    background: rgba(0, 0, 0, 0.9);
+   
+}
+
+#header h1{
+    width: 30%;
+    height: auto;
+    font-size: 28px;
+    color: #ddd;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+#header h1:hover{
+    text-shadow: 0px 5px 20px #00EEEE;
+} 
+
+/**Calculator*/
+#main{
+    height: auto;
+    width: auto;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    background: conic-gradient(from 180deg at 50% 50%, #64FFEC -111.6deg, #F964F3 24.62deg, #FFDC61 160.43deg, #64FFEC 248.4deg, #F964F3 384.62deg);
+}
+
+#main #boxes{
+    width: 24%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.249);
+    padding: 12px;
+    opacity: 90%;
+    transition: all 200ms;
+}
+
+#boxes #boxes1{
+    width: 88%;
+    margin-bottom: 12px;
+    height: 70px;
+    background: rgba(238, 238, 238, 0.422);
+    line-height: 45px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 22px;   
+    border-radius: 2px;
+}
+
+#boxes1 #result00{
+    text-align: left;
+    height: 25px;
+}
+
+#boxes1 #result{
+    text-align: right;
+}
+
+#boxes2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    margin: 0px auto;
+}
+
+#boxes2 .number, .operador, #equal, #delete{
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.122);
+    height: 87px;
+    background: #ffffff53;
+    text-align: center;
+    line-height: 80px;
+    font-size: 30px;
+    filter: brightness(85%) saturate(85%);
+    opacity: 100%;
+    transition: all 100ms;
+}
+
+#boxes2 .number:hover, .operador:hover, #equal:hover, #delete:hover{
+    filter: brightness(120%) saturate(120%);
+    opacity: 100%;
+}
+
+#boxes2 #delete{
+    grid-column: 1 / 4;
+}
+
+#boxes2 #cero{
+    grid-column: 1 / 3;
+}
+
+#footer{
+    width: 100%;
+    height: 65px;
+    background: rgba(0, 0, 0, 0.9);
+    color: rgb(221, 221, 221);
+    text-align: center;
+    line-height: 65px;
+    font-size: 17px;
+    transition: all 300ms;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+
+#footer:hover{
+    transform: scale(1, 1.1);
+}
+
+@media (max-width: 1165px) {
+    #header h1{
+        width: 50%;
+    }
+    #main #boxes{
+        width: 30%;
+    }
+}
+
+@media (max-width: 1095px) {
+    #main #boxes{
+        width: 34%;
+    }
+    #boxes #boxes1{
+        width: 88%;
+    }
+}
+
+@media (max-width: 953px) {
+    #boxes #boxes1{
+        width: 86%;
+    }
+}
+
+@media (max-width: 862px) {
+    #boxes #boxes1{
+        width: 85.5%;
+    }
+}
+
+@media (max-width: 862px) {
+    #boxes #boxes1{
+        width: 84%;
+    }
+    #boxes2 .number, .operador, #equal, #delete{
+        height: 67px;
+        line-height: 67px;
+    }
+}
+
+@media (max-width: 694px) {
+    #header h1{
+        width: 80%;
+    }
+    #main #boxes{
+        width: 40%;
+    }
+    #boxes #boxes1{
+        font-size: 19px;
+    }
+
+    #boxes2 .number, .operador, #equal, #delete{
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 592px) {
+    #main #boxes{
+        width: 45%;
+    }
+}
+
+@media (max-width: 537px) {
+    #main #boxes{
+        width: 50%;
+    }
+}
+
+@media (max-width: 485px) {
+    #boxes #boxes1{
+        width: 81%;
+    }
+}
+
+@media (max-width: 432px) {
+    #header h1{
+        font-size: 20px;
+    }
+    #main #boxes{
+        width: 55%;
+    }
+    #footer{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 378px) {
+    #header h1{
+        font-size: 17px;
+    }
+    #main #boxes{
+        width: 60%;
+    }
+    #footer{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 335px) {
+    #boxes #boxes1{
+        width: 79%;
+    }
+}
+
+@media (max-width: 306px) {
+    #main #boxes{
+        width: 65%;
+    }
+}
